@@ -13,5 +13,5 @@ def equationPicker(input):
             numList = userNumbers()
             divide(numList[0], numList[1])
         case input if input in multList:
-            numList = userNumbers
+            numList = userNumbers()
             multiply(numList[0], numList[1])

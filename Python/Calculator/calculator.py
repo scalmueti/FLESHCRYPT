@@ -6,12 +6,13 @@ def main():
     while exitChoice != 1:
         equationType = input("Input type of problem:\nAddition\nSubtraction\nMultiplication\nDivision\n")
         equationPicker(equationType)
-        exitAttempt = input("Do you want to do another problem or exit (Y/N)\n")
-        if exitAttempt in yesList:
-            exitChoice = 1
-        elif exitAttempt in noList:
-            exitChoice = 0
-        else:
+        exitAttempt = input("Do you want to exit(Y) or do another problem(N)?\n")
+        userChoices = {
+            **{key: 1 for key in yesList},
+            **{key: 0 for key in noList}
+        }
+        exitChoice = userChoices.get(exitAttempt, None)
+        if exitChoice is None:
             print("ERROR: Incorrect user choice")
             return
 main()
