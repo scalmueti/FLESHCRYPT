@@ -7,6 +7,9 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-I${workspaceFolder}/../..",
+                "-I\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\"",
+                "-I\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\crt\\src\\concrt\"", // concrt path
+                "-I\"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\crt\\src\\vcruntime\"", // vcruntime path
                 "-g",
                 "${file}",
                 "-o",

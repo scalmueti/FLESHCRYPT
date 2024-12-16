@@ -1,5 +1,6 @@
 *.exe
-.vscode
+.vscode/
+.vs/
 c_cpp_properites.json
 settings.json
 tasks.json

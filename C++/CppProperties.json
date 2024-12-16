@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "inheritEnvironments": [
+        "msvc_x64"
+      ],
+      "name": "x64-Release",
+      "includePath": [
+        "${workspaceRoot}\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\crt\\src\\concrt",
+        "${env.INCLUDE}",
+        "${workspaceRoot}\\**"
+      ],
+      "defines": [
+        "WIN32",
+        "NDEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "intelliSenseMode": "windows-msvc-x64"
+    }
+  ]
+}
